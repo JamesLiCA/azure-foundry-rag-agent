@@ -1,1 +1,49 @@
+{
+    "name": "idx-auchdas-knowledge",
 
+    "description": "Vector-enabled search index for AUCHDAS product knowledge.",
+
+    "features": {
+
+        "semanticSearch": true,
+
+        "vectorSearch": true,
+
+        "hybridSearch": true
+
+    },
+
+    "fields":[
+
+        "chunk_id",
+
+        "title",
+
+        "content",
+
+        "content_vector",
+
+        "source_file",
+
+        "document_type",
+
+        "language",
+
+        "page_number"
+
+    ],
+
+    "embeddingModel":{
+
+        "provider":"Azure OpenAI",
+
+        "model":"text-embedding-3-small",
+
+        "dimensions":1536
+
+    },
+
+    "vectorAlgorithm":"HNSW",
+
+    "distanceMetric":"Cosine"
+}
