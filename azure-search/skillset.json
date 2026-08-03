@@ -1,0 +1,55 @@
+{
+
+"name":"sk-auchdas-rag",
+
+"pipeline":[
+
+{
+
+"step":"Document Extraction",
+
+"engine":"Azure AI Search"
+
+},
+
+{
+
+"step":"Text Split",
+
+"chunkSize":"1000 characters",
+
+"overlap":"200 characters"
+
+},
+
+{
+
+"step":"Embedding",
+
+"model":"text-embedding-3-small"
+
+},
+
+{
+
+"step":"Metadata Enrichment",
+
+"fields":[
+
+"title",
+
+"document_type",
+
+"language",
+
+"source_file",
+
+"page_number"
+
+]
+
+}
+
+]
+
+}
