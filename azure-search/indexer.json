@@ -1,0 +1,27 @@
+{
+
+"name":"ixr-auchdas-documents",
+
+"schedule":"On Demand",
+
+"source":"Azure Blob Storage",
+
+"skillset":"sk-auchdas-rag",
+
+"targetIndex":"idx-auchdas-knowledge",
+
+"processing":[
+
+"Extract",
+
+"Chunk",
+
+"Generate Embeddings",
+
+"Store Metadata",
+
+"Populate Vector Index"
+
+]
+
+}
