@@ -1,0 +1,25 @@
+{
+
+"name":"ds-auchdas-documents",
+
+"type":"Azure Blob Storage",
+
+"authentication":"Managed Identity",
+
+"container":"knowledge",
+
+"documents":[
+
+"Product Catalog",
+
+"Installation Guide",
+
+"Warranty",
+
+"FAQ",
+
+"Troubleshooting"
+
+]
+
+}
