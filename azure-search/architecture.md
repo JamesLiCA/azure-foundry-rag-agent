@@ -31,3 +31,19 @@ Azure Blob Storage
 ↓
 
 Product Documents
+
+
+# Technologies:
+
+Microsoft Foundry; 
+GPT-5;  
+Azure AI Search; 
+Azure Blob Storage; 
+Azure OpenAI; 
+text-embedding-3-small; 
+HNSW; 
+Semantic Search; 
+Hybrid Search; 
+Managed Identity; 
+
+
