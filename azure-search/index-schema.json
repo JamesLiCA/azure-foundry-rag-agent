@@ -47,3 +47,12 @@
 
     "distanceMetric":"Cosine"
 }
+
+NOTE
+
+The production implementation contains additional metadata fields,
+security settings,
+semantic configurations,
+and vector profiles.
+
+Sensitive configuration has been removed.
