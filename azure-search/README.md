@@ -37,3 +37,72 @@ Cosine similarity
 - Semantic Ranking
 - Vector Search (HNSW)
 - Metadata Filtering
+
+# Azure AI Search Components
+
+This folder contains the Azure AI Search resources used by the AUCHDAS AI Customer Service Agent.
+
+---
+
+## datasource.json
+
+Purpose:
+
+Connect Azure Blob Storage to Azure AI Search.
+
+Documents:
+
+- Product Catalog
+- User Manual
+- FAQ
+- Warranty
+- Installation Guide
+
+---
+
+## skillset.json
+
+Responsible for:
+
+- Document cracking
+- Chunking
+- Embedding generation
+- Metadata enrichment
+
+Pipeline:
+
+Blob Storage
+↓
+
+Extract Text
+↓
+
+Chunk Text
+↓
+
+Generate Embeddings
+↓
+
+Store Metadata
+
+---
+
+## index-schema.json
+
+Defines:
+
+- Searchable fields
+- Metadata fields
+- Vector field
+- Semantic configuration
+- HNSW vector search
+
+---
+
+## indexer.json
+
+Responsible for:
+
+- Reading documents
+- Executing skillset
+- Populating vector index
